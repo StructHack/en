@@ -1,0 +1,14 @@
+.spacer{
+    aspect-ratio: 900/200;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+.layer{
+    background-image:url('../images/bottom.svg')
+}
+.layer1{
+    background-image:url('../images/top.svg')
+}

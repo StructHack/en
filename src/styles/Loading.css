@@ -1,0 +1,63 @@
+/* Global variables goes here
+:root{
+    --neon:#66fcf1;
+    --neondark: #45a29e;
+    --grey: #c5c6c7;
+    --darkblue: #1f2833;
+    --darkblack: #0b0c10
+}
+
+*/
+@import url('Globals.css');
+
+.loading-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkblack);
+    color: var(--neon);
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s;
+    position:absolute; 
+}
+
+.loading-container .loading-bar {
+    border:1px solid var(--neon);
+    background-color: var(--darkblue);
+    width:100px;
+    height: 12px;
+    padding: 0.4em;
+    border-radius: 5px;
+    position: relative;
+}
+
+.loading-container .loading-bar .loading-runner{
+    display: block;
+    width:96px;
+    height:10px;
+    padding:0;
+    background-color: var(--neon);
+    position: absolute;
+    top:0.1em;
+    left:0.1em;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    border-radius: 5px;
+}
+
+@keyframes loading {
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 96px;
+        background-color: white;
+    }
+    100%{
+        width: 96px;
+    }
+}
