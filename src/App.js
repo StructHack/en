@@ -5,26 +5,28 @@ import Home from './components/Home';
 import './styles/Curve.css'
 import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Contacts from './components/Contacts';
 
 function App() {
   const [loaded, setLoaded] = useState(1);
 
   return (
+    <BrowserRouter>
     <div className="App">
-      {loaded ? 
+      {false ? 
       <Loading loaded={loaded} setLoaded={setLoaded}/>
       :
-      <>
-      <section>      
+      <>   
         <Home />
-      </section>
-      <div class='spacer layer'></div>
-      <section>
+      <section class='spacer layer'></section>
          <Projects />
-      </section>
+         <section class='spacer layer2'></section>
+         <Contacts />
       </>
       }
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,47 @@
+@import 'Globals.css';
+
+.contact-container{
+    height: 40vh;
+    width: inherit;
+    background-color: #0b0c10;
+    color:white;
+    position: relative;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: row;
+    gap:3em;    
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    padding:3em;
+    margin:0 auto;
+    font-size: 1.2em;
+    background-color: rgba(50, 47, 47, 0.1);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.contact-box a {
+    vertical-align: middle; 
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contact-box a:hover{
+    color:lightgreen
+}
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media screen and (max-width:700px) {
+    .contact-box{
+        flex-direction: column;
+        gap:0.3em;
+    }
+}

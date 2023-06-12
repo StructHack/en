@@ -9,6 +9,6 @@
 .layer{
     background-image:url('../images/bottom.svg')
 }
-.layer1{
-    background-image:url('../images/top.svg')
+.layer2{
+    background-image: url('../images/contactbg.svg');
 }

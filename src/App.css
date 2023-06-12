@@ -3,10 +3,10 @@
   position: relative;
 }
 html {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-section{
+.App>div{
   scroll-snap-align: start;
 }
 
@@ -14,7 +14,11 @@ section{
   height: 40vmin;
   pointer-events: none;
 }
-
+body{
+  background-image: url('./images/b_anime.svg');
+  background-repeat: no-repeat;
+  background-size: 280%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

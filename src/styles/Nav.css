@@ -1,0 +1,41 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    width:80%;
+    margin: 0 auto;
+    padding:0.6em;
+    padding-top:3em;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding:0.4em 0.8em;
+    transition: background-color 0.5s, color 0.5s, transform 1s;
+    border-radius: 5px 20px;
+    
+}
+nav a:hover{
+    background-color: white;
+    color:black;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:700px) {
+    nav{
+        flex-direction: column;
+        width: 100%;
+        gap:0;
+        padding:0;
+        margin:0;
+        display: none;
+    }
+    nav a{
+        width: 100%;
+    }
+}
