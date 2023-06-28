@@ -23,6 +23,10 @@
     gap:3em;
 }
 
+a{
+    text-decoration: none;
+}
+
 .project-one{
     width: 100%;
     height: 100%;

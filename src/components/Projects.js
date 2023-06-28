@@ -7,6 +7,17 @@ function Projects() {
   return (
     <div className='project-container' id="projects">
        <div className='project-one'>
+        <a href="https://github.com/structhack/assignments" target="_blank" rel="noreferrer">
+          <div className='project-title'>
+            <p>Not a twitter ~Chirper~</p>
+            <p>Node with SQL and React Stack</p>
+          </div>
+          <div className='project-desc'>
+            <img src="https://www.shutterstock.com/image-vector/pixel-art-astronaut-spaceman-8-600w-1984751615.jpg" />
+          </div>
+          </a>
+       </div>
+       <div className='project-one'>
         <a href="https://github.com/structhack/todolist" target="_blank" rel="noreferrer">
           <div className='project-title'>
             <p>TODO LIST</p>
